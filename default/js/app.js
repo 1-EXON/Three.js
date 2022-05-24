@@ -15,12 +15,16 @@ scene.add(cube1);
 camera.position.z = 10
 
 
-
 window.addEventListener("keydown", (e) => {
     if (e.key === 'w') cube1.translateY(0.1)
     else if (e.key === 'a') cube1.translateX(-0.1)
     else if (e.key === 's') cube1.translateY(-0.1)
     else if (e.key === 'd') cube1.translateX(0.1)
+    else if (e.key === 'ArrowUp') cube1.rotateY(0.1)
+    else if (e.key === 'ArrowLeft') cube1.rotateX(-0.1)
+    else if (e.key === 'ArrowDown') cube1.rotateY(-0.1)
+    else if (e.key === 'ArrowRight') cube1.rotateX(0.1)
+    
 })
 
 
